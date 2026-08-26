@@ -112,10 +112,43 @@ RAG Retrieval   Order Lookup
  v
 Knowledge Base
 
+# Architecture
 
+```mermaid
+flowchart TB
+
+    USER[User]
+
+    UI[Streamlit UI / CLI]
+
+    AGENT[Gemini AI Agent]
+
+    RAG[RAG Retrieval]
+
+    ORDER[Order Lookup]
+
+    KB[Knowledge Base]
+
+    DB[Orders Database]
+
+    RESPONSE[Final Customer Response]
+
+
+    USER --> UI
+    UI --> AGENT
+
+    AGENT --> RAG
+    AGENT --> ORDER
+
+    RAG --> KB
+    ORDER --> DB
+
+    RAG --> RESPONSE
+    ORDER --> RESPONSE
+
+![alt text](image.png)
 
 # Technology Stack
-
 Language:
 Python 3.12
 
