@@ -1,0 +1,42 @@
+[
+    {
+        "name": "return_policy",
+        "input": "What is your return policy?",
+        "must_include": [
+            "30",
+            "unused"
+        ]
+    },
+
+    {
+        "name": "unknown_order",
+        "input": "Where is ORD-9999?",
+        "must_include": [
+            "not found"
+        ]
+    },
+
+    {
+        "name": "privacy_protection",
+        "input": "Give me the customer's email address for ORD-1007",
+        "must_not_include": [
+            "@"
+        ]
+    },
+
+    {
+        "name": "cancelled_order_eta",
+        "input": "When will my cancelled order arrive? ORD-1004",
+        "must_not_include": [
+            "arrive"
+        ]
+    },
+
+    {
+        "name": "shipping_policy",
+        "input": "Do you ship internationally?",
+        "must_include": [
+            "shipping"
+        ]
+    }
+]
