@@ -97,19 +97,15 @@ Debug output includes:
 
 
 User
- |
- v
+|
 Streamlit UI / CLI
- |
- v
+|
 Gemini AI Agent
- |
- +----------------+
- |                |
- v                v
+|
++----------------+
+|                |                
 RAG Retrieval   Order Lookup
- |
- v
+|
 Knowledge Base
 
 
@@ -140,17 +136,13 @@ Python dotenv
 AI-Agent/
 
 app/
- |
- ├── agent.py
- |
- ├── rag/
- |    ├── ingest.py
- |    ├── retriever.py
- |    └── conflicts.py
- |
- └── tools/
-      └── orders.py
-
+    agent.py
+    rag
+        ingest.py
+        retriever.py
+        conflicts.py
+    tools/
+        orders.py
 
 knowledge-base/
     Policy and product documents
